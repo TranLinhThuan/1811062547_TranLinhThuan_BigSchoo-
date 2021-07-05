@@ -21,4 +21,5 @@ namespace _1811062547_TranLinhThuan_bigschoool.Models
         [Required]
         public byte CategoryID { get; set; }
     }
+
 }
