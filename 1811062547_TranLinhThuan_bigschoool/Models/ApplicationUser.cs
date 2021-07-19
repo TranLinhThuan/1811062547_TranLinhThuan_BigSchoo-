@@ -31,24 +31,4 @@ namespace _1811062547_TranLinhThuan_bigschoool.Models
             return userIdentity;
         }
     }
-
-<<<<<<< HEAD:1811062547_TranLinhThuan_bigschoool/Models/ApplicationUser.cs
-   
-=======
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    {
-        public DbSet<Course> Courses { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
-        {
-
-        }
-
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
-    }
->>>>>>> ee03fa5786cc8de1301b31f0ad58d3a5a824b4cb:1811062547_TranLinhThuan_bigschoool/Models/IdentityModels.cs
 }
