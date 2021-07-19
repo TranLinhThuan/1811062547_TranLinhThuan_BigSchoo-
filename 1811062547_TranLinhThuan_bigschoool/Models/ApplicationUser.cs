@@ -1,4 +1,7 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -9,6 +12,17 @@ namespace _1811062547_TranLinhThuan_bigschoool.Models
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        [Required]
+        [StringLength(255)]
+        public string Name { get; set; }
+        public ICollection<Following> Followers { get; set; }
+        public ICollection<Following> Followees { get; set; }
+
+        public ApplicationUser()
+        {
+            Followers = new Collection<Following>();
+            Followees = new Collection<Following>();
+        }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -18,6 +32,9 @@ namespace _1811062547_TranLinhThuan_bigschoool.Models
         }
     }
 
+<<<<<<< HEAD:1811062547_TranLinhThuan_bigschoool/Models/ApplicationUser.cs
+   
+=======
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Course> Courses { get; set; }
@@ -33,4 +50,5 @@ namespace _1811062547_TranLinhThuan_bigschoool.Models
             return new ApplicationDbContext();
         }
     }
+>>>>>>> ee03fa5786cc8de1301b31f0ad58d3a5a824b4cb:1811062547_TranLinhThuan_bigschoool/Models/IdentityModels.cs
 }
