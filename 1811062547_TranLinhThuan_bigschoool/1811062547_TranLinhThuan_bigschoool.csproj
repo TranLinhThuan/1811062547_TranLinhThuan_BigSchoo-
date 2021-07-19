@@ -186,6 +186,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\202106280823597_InitialModel.cs" />
     <Compile Include="Migrations\202106280823597_InitialModel.Designer.cs">
       <DependentUpon>202106280823597_InitialModel.cs</DependentUpon>
@@ -226,6 +227,10 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Following.cs" />
+=======
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
+>>>>>>> ee03fa5786cc8de1301b31f0ad58d3a5a824b4cb
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -311,6 +316,7 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202106280823597_InitialModel.resx">
       <DependentUpon>202106280823597_InitialModel.cs</DependentUpon>
@@ -337,6 +343,8 @@
       <DependentUpon>202107190430503_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+=======
+>>>>>>> ee03fa5786cc8de1301b31f0ad58d3a5a824b4cb
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
