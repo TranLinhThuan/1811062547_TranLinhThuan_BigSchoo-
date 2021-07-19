@@ -40,6 +40,7 @@ namespace _1811062547_TranLinhThuan_bigschoool.Controllers
                 viewModel.Categories = _dbContext.Categories.ToList();
                 return View("Create", viewModel);
             }
+            //thuan
             var course = new Course
             {
                 LecturerId = User.Identity.GetUserId(),
