@@ -6,14 +6,14 @@ namespace _1811062547_TranLinhThuan_bigschoool.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddIsCanceledColumnToCourse : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
+    public sealed partial class initdb : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddIsCanceledColumnToCourse));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initdb));
         
         string IMigrationMetadata.Id
         {
-            get { return "202107141412277_AddIsCanceledColumnToCourse"; }
+            get { return "202107190921051_initdb"; }
         }
         
         string IMigrationMetadata.Source
